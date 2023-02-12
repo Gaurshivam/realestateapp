@@ -1,0 +1,46 @@
+.property{
+    width: 100%;
+    margin: 4rem 0;
+    text-align: center;
+   
+}
+
+.property > div{
+    display: flex;
+    justify-content: center;
+}
+
+.property > div p{
+    margin: 1rem 2rem;
+    font-size: 1.3rem;
+}
+
+.bold{
+    font-weight: 700;
+}
+
+.property .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1.2rem;
+    margin: 10px;
+}
+.property img{
+    width: 100%;
+    
+}
+
+@media screen and (max-width:940px) {
+    .property{
+        margin: 1rem 0;
+    }
+    .property > div p{
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    .property .container{
+        grid-template-columns: 1fr;
+        grid-gap: .5rem;
+    }
+    
+}

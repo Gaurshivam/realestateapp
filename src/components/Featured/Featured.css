@@ -1,0 +1,27 @@
+.container-box{
+    background-color: aqua;
+}
+
+.card-box{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-around;
+    margin: 30px 15px 15px 15px;
+    padding: 30px;
+}
+
+.card-box-two{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    justify-content: space-around;
+    margin: 30px 15px 45px 15px;
+    padding: 30px;
+}
+
+@media screen and (max-width:940px) {
+    .container-box .Img-Card{
+         grid-template-columns: repeat(1fr);
+    }   
+}

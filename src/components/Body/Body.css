@@ -1,0 +1,91 @@
+.body{
+    color: #9d4343;
+    cursor: pointer;
+    height: 90vh;
+    width: 100%;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-bottom: 4rem;
+
+}
+
+.body:before{
+    content: '';
+    background: url('https://images.unsplash.com/photo-1560184897-ae75f418493e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTE5fHxob21lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    z-index: -1;
+}
+
+.body .content{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 700px;
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.body h1{
+    font-size: 3.5rem;
+    color: rgb(243, 225, 225);
+    border-radius: 30px;
+    text-transform: capitalize;
+}
+.body h1:hover {
+    color: rgb(49, 197, 4);
+} 
+
+.body .search-text{
+    border-radius: 40px;
+    color: aliceblue;
+    font-size: 1.4rem;
+    margin: 1.5rem; 
+}
+
+.body .search-text:hover{
+    color: rgb(249, 21, 234);
+}
+
+.search{
+    background-color: aliceblue;
+    display: flex;
+    color: #333;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 4px;
+    border-radius: 18px;
+}
+
+.search input[type=text]{
+      border: transparent;
+      background-color: transparent;
+      width: 600px;
+      font-size: 1.2rem;
+      font-family: sans-serif;
+      padding-left: 10px;
+}
+
+
+.search input[type=text]:focus{
+    outline: none;
+}
+
+.search label{
+    padding: 0 14px 0 8px;
+}
+.search .radio{
+    padding: 0 14px 0 8px;
+}
+
+.search button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    padding-top: 6px;
+}
